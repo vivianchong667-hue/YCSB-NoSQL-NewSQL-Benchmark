@@ -52,19 +52,3 @@ Then CockroachDB:
 -P workloads/workloada \
 -P cockroach.properties
 
-
-Save. ✅
-
----
-
-## 3️⃣ Initialize GitHub Repo (Windows CMD)
-
-Open **Command Prompt** inside:
-
-
-Run **one by one**:
-
-```bat
-git init
-git add README.md
-git commit -m "Initial commit: Cassandra and CockroachDB YCSB benchmarks"
