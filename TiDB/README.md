@@ -13,13 +13,13 @@ performance benchmarking with the Yahoo! Cloud Serving Benchmark (YCSB).
 ---
 
 ## Benchmark Setup
-**Database**: TiDB v7.x (via TiDB server)
-**Interface**: JDBC (MySQL-compatible)
-**Benchmark Tool**: YCSB v0.18.0-SNAPSHOT
-**Workload**: YCSB Workload A (50% reads, 50% updates)
-**Record Count**: 1,000
-**Operation Count**: 1,000
-**Connection Port**: 4000 (default TiDB)
+- **Database**: TiDB v7.x (via TiDB server)
+- **Interface**: JDBC (MySQL-compatible)
+- **Benchmark Tool**: YCSB v0.18.0-SNAPSHOT
+- **Workload**: YCSB Workload A (50% reads, 50% updates)
+- **Record Count**: 1,000
+- **Operation Count**: 1,000
+- **Connection Port**: 4000 (default TiDB)
 
 ---
 
@@ -77,5 +77,6 @@ db.passwd=
 - TiDB was successfully tested using the MySQL JDBC driver.
 - Performance numbers may vary depending on VM resources and network conditions.
 - The YCSB load and run commands completed successfully without errors.
+
 
 
