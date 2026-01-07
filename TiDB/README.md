@@ -72,7 +72,7 @@ db.passwd=
 - **Throughput**: ~30.46 ops/sec
 - **Read latency**: average ~3.899 ms
 - **Update latency**: average ~13.461 ms
-- **Result file**: `TiDB/results/tidb_run_result.txt`
+- **Result file**: `TiDB/results/run_result.txt`
 
 ---
 
@@ -80,6 +80,7 @@ db.passwd=
 - TiDB was successfully tested using the MySQL JDBC driver.
 - Performance numbers may vary depending on VM resources and network conditions.
 - The YCSB load and run commands completed successfully without errors.
+
 
 
 
