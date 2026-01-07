@@ -14,6 +14,7 @@ under identical workload conditions.
 - **Apache Cassandra** (NoSQL – Wide-column store)
 - **MongoDB Community Server 4.4** (NoSQL – Document-oriented)
 - **CockroachDB** (NewSQL)
+- **TiDB** (NewSQL)
 
 ---
 
@@ -73,6 +74,15 @@ configuration to ensure a fair comparison with the NoSQL databases.
 Due to environmental constraints in the virtualized setup, only load-phase
 performance metrics were successfully obtained for CockroachDB. This
 limitation is explicitly documented to maintain experimental transparency.
+
+---
+
+## TiDB
+
+- **Version**: TiDB Community Edition (via TiUP playground)
+- **Interface**: JDBC (MySQL-compatible connector)
+
+TiDB was benchmarked using the same YCSB Workload A configuration as the other databases, consisting of 10,000 records for the load phase and 10,000 operations for the run phase. The evaluation was performed through the JDBC binding, leveraging TiDB’s MySQL‑compatible interface.
 
 ---
 
