@@ -24,9 +24,9 @@
 - **Version**: Apache Cassandra 4.1.3  
 - **Interface**: CQL (cassandra-cql binding in YCSB)  
 
-### Benchmark Commands
+## Benchmark Commands
 
-**Load Phase**
+### Load Phase
 ```bash
 ./bin/ycsb.sh load cassandra-cql \
 -P workloads/workloada \
@@ -34,14 +34,11 @@
 -p cassandra.keyspace=ycsb \
 -p recordcount=10000 \
 -p operationcount=10000
+```
 
-**Run Phase**
+### Run Phase
 ```bash
 ./bin/ycsb.sh run cassandra-cql \
 -P workloads/workloada \
 -p hosts=127.0.0.1 \
 -p cassandra.keyspace=ycsb
-
----
-
-## More to come
