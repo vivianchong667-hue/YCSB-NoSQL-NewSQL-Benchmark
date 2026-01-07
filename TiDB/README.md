@@ -17,8 +17,8 @@ performance benchmarking with the Yahoo! Cloud Serving Benchmark (YCSB).
 - **Interface**: JDBC (MySQL-compatible)
 - **Benchmark Tool**: YCSB v0.18.0-SNAPSHOT
 - **Workload**: YCSB Workload A (50% reads, 50% updates)
-- **Record Count**: 1,000
-- **Operation Count**: 1,000
+- **Record Count**: 10,000
+- **Operation Count**: 10,000
 - **Connection Port**: 4000 (default TiDB)
 
 ---
@@ -42,7 +42,8 @@ db.passwd=
 ./bin/ycsb.sh load jdbc \
   -P workloads/workloada \
   -P config/tidb.properties \
-  -p recordcount=1000
+  -p recordcount=10000
+  -p operationcount=10000
 ```
 
 ### Run Phase
@@ -50,26 +51,28 @@ db.passwd=
 ./bin/ycsb.sh run jdbc \
   -P workloads/workloada \
   -P config/tidb.properties \
-  -p operationcount=1000
+  -p recordcount=10000 \
+  -p operationcount=10000
 ```
 
 ---
 
 ## Results
 ### Load Phase Output
-**Runtime**: ~8599 ms
-**Throughput**: ~116 ops/sec
-**Insert latency**: average ~7.36 ms
-**Result file**: `results/tidb_load_result.txt`
+- **Runtime**: ~82598 ms
+- **Throughput**: ~121.07 ops/sec
+- **Insert latency**: average ~8.0 ms
+- **Result file**: `results/tidb_load_result.txt`
+- **Total Inserts**: 10,000 (SUCCESS)
 
 ---
 
 ### Run Phase Output
-**Runtime**: ~10364 ms
-**Throughput**: ~96 ops/sec
-**Read latency**: average ~2.72 ms
-**Update latency**: average ~8.87 ms
-**Result file**: `results/tidb_run_result.txt`
+- **Runtime**: ~328306 ms
+- **Throughput**: ~30.46 ops/sec
+- **Read latency**: average ~3.899 ms
+- **Update latency**: average ~13.461 ms
+- **Result file**: `results/tidb_run_result.txt`
 
 ---
 
@@ -77,6 +80,7 @@ db.passwd=
 - TiDB was successfully tested using the MySQL JDBC driver.
 - Performance numbers may vary depending on VM resources and network conditions.
 - The YCSB load and run commands completed successfully without errors.
+
 
 
 
