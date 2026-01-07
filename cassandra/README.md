@@ -1,54 +1,43 @@
-\# Cassandra YCSB Benchmark
+# Cassandra YCSB Benchmark
 
+This directory contains the Apache Cassandra implementation used for
+YCSB-based benchmarking as part of a NoSQL vs NewSQL performance study.
 
+## Folder Structure
 
-This folder contains the Cassandra implementation used for YCSB benchmarking.
+- `schema/`  
+  Cassandra keyspace and table definitions.
 
+- `workload/`  
+  YCSB workload configuration files.
 
+- `scripts/`  
+  Scripts used to load data and execute YCSB workloads.
 
-\## Structure
+- `results/`  
+  Benchmark output files generated from YCSB execution.
 
-\- schema/ : Cassandra table definitions
+## Benchmark Results
 
-\- workload/ : YCSB workload configuration
+The following benchmark phases were executed using YCSB:
 
-\- scripts/ : Load and run scripts
+### Load Phase
+- Throughput: ~498 ops/sec  
+- Operations: INSERT  
+- Result file: `results/load_result.txt`
 
-\- results/ : Benchmark outputs
+### Run Phase
+- Throughput: ~691 ops/sec  
+- Operations: READ and UPDATE  
+- Average read latency: ~1.2 ms  
+- Average update latency: ~1.1 ms  
+- Result file: `results/run_result.txt`
 
+## Notes
 
+- Results are obtained from an actual YCSB execution.
+- Performance values may vary depending on hardware and deployment environment.
+- Execution was performed in a Linux-compatible environment (e.g., Linux / WSL).
 
-\## Notes
-
-This repository focuses on benchmark configuration and code structure.
-
-Execution environment may vary (Linux / WSL).
-
-
-
-\## Results
-
-
-
-Benchmark results were obtained using YCSB on Apache Cassandra.
-
-
-
-\- Data loading results are stored in `results/load\_result.txt`
-
-\- Workload execution results are stored in `results/run\_result.txt`
-
-
-
-\### Summary
-
-\- Load Throughput: ~498 ops/sec
-
-\- Run Throughput: ~691 ops/sec
-
-\- Average read latency: ~1.2 ms
-
-\- Average update latency: ~1.1 ms
-
-
-
+This repository focuses on benchmark configuration, reproducibility,
+and result documentation rather than deployment automation.
