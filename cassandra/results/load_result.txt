@@ -1,0 +1,16 @@
+YCSB LOAD RESULT – CASSANDRA
+
+[OVERALL], RunTime(ms), 20049
+[OVERALL], Throughput(ops/sec), 498.78
+
+[TOTAL_GCS], Count, 16
+[TOTAL_GC_TIME], Time(ms), 60
+[TOTAL_GC_TIME_%], Time(%), 0.30
+
+[INSERT], Operations, 10000
+[INSERT], AverageLatency(us), 1676.41
+[INSERT], MinLatency(us), 180
+[INSERT], MaxLatency(us), 283135
+[INSERT], 95thPercentileLatency(us), 3445
+[INSERT], 99thPercentileLatency(us), 5871
+[INSERT], Return=OK, 10000

@@ -1,0 +1,20 @@
+YCSB RUN RESULT – CASSANDRA
+
+[OVERALL], RunTime(ms), 14465
+[OVERALL], Throughput(ops/sec), 691.32
+
+[READ], Operations, 4946
+[READ], AverageLatency(us), 1212.22
+[READ], MinLatency(us), 277
+[READ], MaxLatency(us), 141567
+[READ], 95thPercentileLatency(us), 2585
+[READ], 99thPercentileLatency(us), 5311
+[READ], Return=OK, 4946
+
+[UPDATE], Operations, 5054
+[UPDATE], AverageLatency(us), 1102.31
+[UPDATE], MinLatency(us), 203
+[UPDATE], MaxLatency(us), 95103
+[UPDATE], 95thPercentileLatency(us), 2323
+[UPDATE], 99thPercentileLatency(us), 4623
+[UPDATE], Return=OK, 5054
