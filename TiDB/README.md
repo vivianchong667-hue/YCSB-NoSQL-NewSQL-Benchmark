@@ -66,6 +66,7 @@ results/tidb_run_result.txt
 ---
 
 ## Notes
-TiDB was successfully tested using the MySQL JDBC driver.
-Performance numbers may vary depending on VM resources and network conditions.
-The YCSB load and run commands completed successfully without errors.
+- TiDB was successfully tested using the MySQL JDBC driver.
+- Performance numbers may vary depending on VM resources and network conditions.
+- The YCSB load and run commands completed successfully without errors.
+
