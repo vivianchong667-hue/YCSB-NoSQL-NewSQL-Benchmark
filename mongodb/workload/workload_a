@@ -1,0 +1,8 @@
+recordcount=10000
+operationcount=10000
+workload=com.yahoo.ycsb.workloads.CoreWorkload
+
+readproportion=0.5
+updateproportion=0.5
+insertproportion=0
+scanproportion=0

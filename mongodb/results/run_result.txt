@@ -1,0 +1,24 @@
+YCSB RUN RESULT – MONGODB
+
+[OVERALL], RunTime(ms), 1927
+[OVERALL], Throughput(ops/sec), 518.94
+
+[TOTAL_GCs], Count, 2
+[TOTAL_GC_TIME], Time(ms), 25
+[TOTAL_GC_TIME_%], Time(%), 1.30
+
+[READ], Operations, 505
+[READ], AverageLatency(us), 1021.40
+[READ], MinLatency(us), 200
+[READ], MaxLatency(us), 107071
+[READ], 95thPercentileLatency(us), 1904
+[READ], 99thPercentileLatency(us), 3465
+[READ], Return=OK, 505
+
+[UPDATE], Operations, 495
+[UPDATE], AverageLatency(us), 830.84
+[UPDATE], MinLatency(us), 218
+[UPDATE], MaxLatency(us), 14023
+[UPDATE], 95thPercentileLatency(us), 1519
+[UPDATE], 99thPercentileLatency(us), 3117
+[UPDATE], Return=OK, 495
