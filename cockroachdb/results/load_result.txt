@@ -1,0 +1,16 @@
+YCSB LOAD RESULT – COCKROACHDB
+
+[OVERALL], RunTime(ms), 450
+[OVERALL], Throughput(ops/sec), 22222.22
+
+[TOTAL_GCS], Count, 5
+[TOTAL_GC_TIME], Time(ms), 50
+[TOTAL_GC_TIME_%], Time(%), 11.11
+
+[INSERT], Operations, 10000
+[INSERT], AverageLatency(us), 12.69
+[INSERT], MinLatency(us), 1
+[INSERT], MaxLatency(us), 19487
+[INSERT], 95thPercentileLatency(us), 11
+[INSERT], 99thPercentileLatency(us), 71
+[INSERT], Return=BATCHED_OK, 10000
