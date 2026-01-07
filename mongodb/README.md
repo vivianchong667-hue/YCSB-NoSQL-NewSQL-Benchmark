@@ -24,7 +24,7 @@ Benchmark output files.
 
 ## Benchmark Setup
 
-- Database: MongoDB v6.x  
+- Database: MongoDB Community Server 4.4 
 - Database Type: NoSQL (Document-Oriented)  
 - Interface: MongoDB YCSB binding  
 - Benchmark Tool: YCSB v0.17.0  
