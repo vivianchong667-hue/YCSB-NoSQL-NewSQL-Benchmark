@@ -43,7 +43,6 @@ db.passwd=
   -P workloads/workloada \
   -P config/tidb.properties \
   -p recordcount=10000
-  -p operationcount=10000
 ```
 
 ### Run Phase
@@ -59,9 +58,9 @@ db.passwd=
 
 ## Results
 ### Load Phase Output
-- **Runtime**: ~82598 ms
-- **Throughput**: ~121.07 ops/sec
-- **Insert latency**: average ~8.0 ms
+- **Runtime**: ~62067 ms
+- **Throughput**: ~161.12 ops/sec
+- **Insert latency**: average ~5.92 ms
 - **Result file**: `TiDB/results/load_result.txt`
 - **Total Inserts**: 10,000 (SUCCESS)
 
@@ -80,6 +79,7 @@ db.passwd=
 - TiDB was successfully tested using the MySQL JDBC driver.
 - Performance numbers may vary depending on VM resources and network conditions.
 - The YCSB load and run commands completed successfully without errors.
+
 
 
 
