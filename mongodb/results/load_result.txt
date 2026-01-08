@@ -1,16 +1,16 @@
 YCSB LOAD RESULT – MONGODB
 
-[OVERALL], RunTime(ms), 1781
-[OVERALL], Throughput(ops/sec), 561.48
+[OVERALL], RunTime(ms), 4971
+[OVERALL], Throughput(ops/sec), 2011.6678
 
-[TOTAL_GCs], Count, 2
-[TOTAL_GC_TIME], Time(ms), 20
-[TOTAL_GC_TIME_%], Time(%), 1.12
+[TOTAL_GCs], Count, 3
+[TOTAL_GC_TIME], Time(ms), 11
+[TOTAL_GC_TIME_%], Time(%), 0.221284
 
-[INSERT], Operations, 1000
-[INSERT], AverageLatency(us), 684.19
-[INSERT], MinLatency(us), 136
-[INSERT], MaxLatency(us), 94079
-[INSERT], 95thPercentileLatency(us), 1429
-[INSERT], 99thPercentileLatency(us), 3505
-[INSERT], Return=OK, 1000
+[INSERT], Operations, 10000
+[INSERT], AverageLatency(us), 386.4815
+[INSERT], MinLatency(us), 135
+[INSERT], MaxLatency(us), 120383
+[INSERT], 95thPercentileLatency(us), 687
+[INSERT], 99thPercentileLatency(us), 1066
+[INSERT], Return=OK, 10000
